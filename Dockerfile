@@ -1,8 +1,5 @@
 FROM golang:1.16.4-buster
-RUN mkdir /gorrino
-ADD ./gorrino/. /gorrino
-WORKDIR /gorrino
-RUN ls -lisa
+COPY . .
 RUN go mod tidy
-RUN go build -o main .
-CMD ["/gorrino/main"]
+RUN go build -o main src/main.go
+CMD ["main"]

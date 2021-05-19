@@ -1,4 +1,4 @@
-module gorrino
+module github.com/davidsanfal/gorrino
 
 go 1.16
 

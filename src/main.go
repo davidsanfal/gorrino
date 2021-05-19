@@ -1,5 +1,5 @@
 
-package gorrino
+package main
 
 import (
 	"context"
